@@ -1,0 +1,40 @@
+
+.skills-set {
+	width: 10%;
+	background-color: #3C568B;
+	height: 5%;
+	float: left;
+	padding: 2px;
+
+}
+
+#myProgress {
+  position = relative;
+  width: 80%;
+  background-color: #ddd;
+	height: 5%;
+	text-align: center;
+	color: white;
+	float: left;
+}
+
+#myBar {
+  position=absolute;
+  width: 0;
+  height: 100%;
+  background-color: #5E76A8;
+}
+#label {
+  text-align: center;
+  padding: 2px;
+  color: white;
+  height:23px;
+}
+.skills {
+	width: 100%;
+	font-size: 20px;
+	padding: 2px;
+	height: 100%;
+	text-align: center;
+	color: white;
+}
