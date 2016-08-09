@@ -1,0 +1,39 @@
+.loader {
+  position:relative;
+  top:100px;
+  left:200px;
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+  animation-name: spin;
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+/*     animation: spin 2s linear infinite; */
+}
+.loader-s {
+  position:relative;
+  top:100px;
+  left:200px;
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+  animation-name: spin;
+  animation-duration:2s;
+  animation-direction:reverse;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+/*     animation: spin 2s linear infinite; */
+}
+
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  25%{ -webkit-transform: rotate(90deg); border-bottom: 10px solid red;}
+  75%{ -webkit-transform: rotate(270deg); border-top: 10px solid red;}
+  100% { -webkit-transform: rotate(360deg); }
+}
