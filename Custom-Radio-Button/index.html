@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Ashu</title>
+
+
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <form method="get">
+        <ul>
+        <li class="q1">
+            <div class="row">
+              <h2 class="center">What is your project type?</h2>
+                    <br>
+                  <div class="col-sm-2 col-sm-offset-2 cc-selector">
+                    <input type="radio" id="q1a" name="q1" value="design">
+                    <label for="q1a" class="radio-custom construction">Design</label>
+                  </div>
+                  <div class="col-sm-2 col-sm-offset-1 cc-selector">
+                    <input type="radio" id="q1b" name="q1" value="execute">
+                    <label for="q1b" class="radio-custom construction">Execute</label>
+                  </div>
+                  <div class="col-sm-2 col-sm-offset-1 cc-selector">
+                    <input type="radio" id="q1c" name="q1" value="designAndexecute">
+                    <label for="q1c" class="radio-custom construction">Design & Execute</label>
+                  </div>
+             </div>
+          </li>
+          <li class="q2">
+            <div class="row">
+              <h2 class="center">What's your budget? (lakhs)</h2>
+                    <br>
+                  <div class="col-sm-2 col-sm-offset-2 cc-selector">
+                    <input type="radio" id="q2a" name="q2" value="< 3 Lakhs">
+                    <label for="q2a" class="radio-custom construction">< 3 Lakhs</label>
+                  </div>
+                  <div class="col-sm-2 col-sm-offset-1 cc-selector">
+                    <input type="radio" id="q2b" name="q2" value="3-5 Lakhs">
+                    <label for="q2b" class="radio-custom construction">3-5 Lakhs</label>
+                  </div>
+                  <div class="col-sm-2 col-sm-offset-1 cc-selector">
+                    <input type="radio" id="q2c" name="q2" value="> 5 Lakhs">
+                    <label for="q2c" class="radio-custom construction"> > 5 Lakhs</label>
+                  </div>
+             </div>
+          </li>
+          <li class="q3">
+            <div class="row">
+              <h2 class="center">Where do you live?</h2>
+                    <br>
+                  <div class="col-sm-5 col-sm-offset-3 form-group">
+                    <input type="text" class="form-control" id="q3" name="q3" placeholder="City" required>
+                  </div>
+                  <div class="col-sm-5 col-sm-offset-3 form-group">
+                    <input type="text" class="form-control" id="q4" name="q4" placeholder="State" required>
+                  </div>
+                  <div class="col-sm-5 col-sm-offset-3 form-group">
+                    <input type="text" class="form-control" id="q5" name="q5" placeholder="Country" required  >
+                  </div>
+             </div>
+          </li>
+        </ul>
+        <div class="controls">
+            <button class="fs-continue fs-show" onclick="next(q1)" id="button">CONTINUE &gt;</button>
+            <button type="submit" class="col-sm-offset-5 btn btn-success btn-lg" id="submit">Submit &gt;</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+  </body>
+</html>

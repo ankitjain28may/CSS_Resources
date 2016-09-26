@@ -1,0 +1,105 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+html,body,.container{
+  height:100%;
+  width: 100%;
+}
+body{
+  background:url(../buildtrail.jpg) no-repeat center center fixed;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  color:#fff;
+  font-weight:400;
+  font-size:1em;
+  font-family:"Titillium Web",'Raleway',Arial,sans-serif;
+  overflow:hidden;
+  overflow-y:scroll;
+  min-height:590px;
+}
+a{color:#4d4c4d;
+  text-decoration:none;
+  outline:none;
+}
+a:hover,a:focus{
+  color:#686868;
+}
+.main {
+  position:absolute;
+  top:150px;
+  width:100%;
+}
+input[type=radio] {
+  display:block;
+}
+.center {
+  text-align:center;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type:none;
+}
+label.construction {
+  background-image: url(../construction.png);
+  z-index:2;
+  padding-top:100px;
+  text-align:center;
+  font-size: 20px;
+  height: auto;
+}
+.cc-selector input{
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+.radio-custom {
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:100px;height:70px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+}
+ul li {
+  display:inline-block;
+  display: none;
+  width: 100%;
+}
+button.fs-continue {
+      position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 0 40px 60px 0;
+    font-size: 1.25em;
+}
+button.fs-submit, button.fs-continue {
+      padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 3px solid #ffffff;
+    font-weight: 700;
+    color: #686868;
+    background-color: #ffffff;
+    font-family: "Titillium Web";
+    letter-spacing: 3px;
+}
+
+.fs-show {
+  visibility: visible!important;
+}
+/*input[type=text] {
+  width:60%;
+  height: 40px;
+}*/
+
+.q1 {
+  display: block;
+}
+#submit {
+  margin-top:10px;
+  display: none;
+}
