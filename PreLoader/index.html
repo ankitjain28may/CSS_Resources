@@ -2,26 +2,70 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>A Pen by  Ankit Jain</title>
-    
-    
-    
-    
-        <link rel="stylesheet" href="css/style.css">
+    <title>Preloaders Ankit Jain</title>
 
-    
-    
-    
+    <script src="https://www.gstatic.com/firebasejs/3.5.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyD5iDgKMPoXMbcQkcHzRE9Q3sAYkihrvhI",
+        authDomain: "hello-f06ee.firebaseapp.com",
+        databaseURL: "https://hello-f06ee.firebaseio.com",
+        storageBucket: "",
+        messagingSenderId: "169515646214"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="">Preloaders</a>
+        </div>
+        <!-- <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div> -->
+      </div>
+    </nav>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row" style="text-align:center;">
+            <div class="col-md-3">
+                <h1>Spinner-1</h1><br>
+                <div class="loader"></div>
+                <div class="loader-s"></div>
+            </div>
+            <div class="col-md-3">
+                <h1>Spinner-2</h1><br>
+                <div class="spinner"></div>
+            </div>
+            <div class="col-md-3">
+                <h1>Spinner-3</h1><br>
+                <div class="outer">
+                <div class="spinner-fly"></div>
+            </div>
+        </div>
+    </div>
 
-    <div class="loader"></div>
-<div class="loader-s"></div>
-    
-    
-    
-    
-    
   </body>
 </html>

@@ -1,28 +1,28 @@
+.navbar {
+  border-radius: 0;
+}
+
 .loader {
-  position:relative;
-  top:100px;
-  left:200px;
+  margin: auto;
     border: 10px solid #f3f3f3; /* Light grey */
     border-top: 10px solid #3498db; /* Blue */
     border-radius: 50%;
     width: 80px;
     height: 80px;
-  animation-name: spin;
+  animation-name: spin-1;
   animation-duration:2s;
   animation-iteration-count:infinite;
   animation-timing-function:linear;
 /*     animation: spin 2s linear infinite; */
 }
 .loader-s {
-  position:relative;
-  top:100px;
-  left:200px;
+  margin: auto;
     border: 10px solid #f3f3f3; /* Light grey */
     border-top: 10px solid #3498db; /* Blue */
     border-radius: 50%;
     width: 80px;
     height: 80px;
-  animation-name: spin;
+  animation-name: spin-1;
   animation-duration:2s;
   animation-direction:reverse;
   animation-iteration-count:infinite;
@@ -30,10 +30,64 @@
 /*     animation: spin 2s linear infinite; */
 }
 
+.spinner {
+  margin: auto;
+  border: 60px solid white;
+  border-right: 60px solid #51b5e3;
+  border-left: 60px solid #51b5e3;
+  width:0px;
+  border-radius:50%;
+  animation: spin-2 0.75s linear infinite;
+}
 
-@-webkit-keyframes spin {
+.spinner-fly {
+  position:relative;
+  top:0px;
+  left:0px;
+  border: 60px solid transparent;
+  border-left: 60px solid #51b5e3;
+  border-right: 60px solid #ea8b49;
+  border-radius:8px;
+  width:0px;
+  margin: auto;
+  animation: spinfly-3 0.1s infinite alternate,move 5s infinite;
+}
+
+
+@-webkit-keyframes spin-1 {
   0% { -webkit-transform: rotate(0deg); }
   25%{ -webkit-transform: rotate(90deg); border-bottom: 10px solid red;}
   75%{ -webkit-transform: rotate(270deg); border-top: 10px solid red;}
   100% { -webkit-transform: rotate(360deg); }
+}
+
+
+
+@-webkit-keyframes spin-2 {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spinfly-3 {
+  0% { -webkit-transform: rotateX(0deg); }
+  100% { -webkit-transform: rotateX(360deg); }
+}
+
+@-webkit-keyframes move {
+  25% {
+    top:25px;
+    left:25px;
+  }
+  50% {
+    top:35px;
+    left:0px;
+  }
+  75%{
+    top:25px;
+    left:25px;
+  }
+  100%{
+    top:0;
+    left:0;
+  }
 }
